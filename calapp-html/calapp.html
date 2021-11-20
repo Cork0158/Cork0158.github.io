@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="calapp.css">
+    </head>
+
+    <body>
+        <table id="btns">
+            <!-- 液晶画面部分 -->
+            <tr>
+                <td colspan="4">
+                    <input type="text" class="display" id="display" value="" disabled>
+                </td>
+            </tr>
+
+            <!-- 上から1段目 -->
+            <tr>
+                <td><input type="button" value="7"></td>
+                <td><input type="button" value="8"></td>
+                <td><input type="button" value="9"></td>
+                <td><input type="button" value="÷" class="operator" name="div_btn"></td>
+            </tr>
+
+            <!-- 上から2段目 -->
+            <tr>
+                <td><input type="button" value="4"></td>
+                <td><input type="button" value="5"></td>
+                <td><input type="button" value="6"></td>
+                <td><input type="button" value="×" class="operator" name="multi_btn"></td>
+            </tr>
+
+            <!-- 上から3段目 -->
+            <tr>
+                <td><input type="button" value="1"></td>
+                <td><input type="button" value="2"></td>
+                <td><input type="button" value="3"></td>
+                <td><input type="button" value="-" class="operator"></td>
+            </tr>
+
+            <!-- 上から4段目 -->
+            <tr>
+                <td><input type="button" value="0"></td>
+                <td><input type="button" value="(" class="operator"></td>
+                <td><input type="button" value=")" class="operator"></td>
+                <td><input type="button" value="+" class="operator"></td>
+            </tr>
+
+            <!-- 上から5段目 -->
+            <tr>
+                <td><input type="button" value="AC"></td>
+                <td><input type="button" value="C"></td>
+                <td><input type="button" value="SP" name="space_btn"></td>
+                <td><input type="button" value="=" class="equal"></td>
+            </tr>
+
+        </table>
+
+        <script type="module" src="calapp.js"></script>
+        <script type="module" src="calculater.js"></script>
+        <script type="module" src="mylexer.js"></script>
+        <script type="module" src="mybuffer.js"></script>
+    </body>
+
+</html>
