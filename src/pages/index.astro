@@ -1,0 +1,63 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="Soma Sugahara | Portfolio">
+  <header>
+    <nav>
+      <div class="brand">Soma Sugahara</div>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="section hero">
+      <h1>Hi, I'm Soma.</h1>
+      <p>
+        I'm a graduate student in information security at Ritsumeikan University. I like building
+        small tools, exploring software, and learning new things.
+      </p>
+    </section>
+
+    <section id="about" class="section">
+      <div class="grid grid--2">
+        <div class="card">
+          <h3>About</h3>
+          <ul>
+            <li>立命館大学大学院 情報理工学研究科 計算機科学コース 博士前期課程 1回生</li>
+            <li>サイバーセキュリティ研究室所属</li>
+            <li>立命館大学入試広報学生スタッフ</li>
+            <li>趣味: 食べ歩き / 旅行</li>
+            <li>応用情報技術者試験</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Contact</h3>
+          <p>
+            <strong>Email</strong>: <a href="mailto:sugahara@cysec.cs.ritsumei.ac.jp">sugahara@cysec.cs.ritsumei.ac.jp</a>
+          </p>
+          <p>
+            <strong>GitHub</strong>: <a href="https://github.com/Cork0158">github.com/Cork0158</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section">
+      <div class="card">
+        <h3>Projects</h3>
+        <ul>
+          <li>No public projects listed yet.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© {new Date().getFullYear()} Soma Sugahara</p>
+  </footer>
+</BaseLayout>
