@@ -116,6 +116,29 @@ main {
   margin: 0 0 0.75rem;
 }
 
+.timeline {
+  display: grid;
+  gap: 1rem;
+  padding-left: 0.5rem;
+  border-left: 2px solid rgba(244, 246, 255, 0.2);
+}
+
+.timeline__item {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.timeline__date {
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.timeline__detail {
+  color: rgba(244, 246, 255, 0.9);
+}
+
 .footer {
   padding: 3rem 1.25rem;
   text-align: center;

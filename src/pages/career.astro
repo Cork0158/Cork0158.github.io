@@ -1,0 +1,72 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="Career">
+  <header>
+    <nav>
+      <div class="brand">Soma Sugahara</div>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/career">Career</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+      <h1>Career</h1>
+      <p>This page outlines my background and professional journey.</p>
+
+      <div class="card">
+        <h3>Timeline</h3>
+        <div class="timeline">
+          <div class="timeline__item">
+            <div class="timeline__date">2025</div>
+            <div class="timeline__detail">
+              Joined the public sector as a civil servant.
+            </div>
+          </div>
+
+          <div class="timeline__item">
+            <div class="timeline__date">2025</div>
+            <div class="timeline__detail">
+              Graduated from <strong>Ritsumeikan University Graduate School of Information Science and Engineering</strong>.
+            </div>
+          </div>
+
+          <div class="timeline__item">
+            <div class="timeline__date">2023</div>
+            <div class="timeline__detail">
+              Entered <strong>Ritsumeikan University Graduate School of Information Science and Engineering</strong>.
+            </div>
+          </div>
+
+          <div class="timeline__item">
+            <div class="timeline__date">2023</div>
+            <div class="timeline__detail">
+              Graduated from <strong>College of Information Science and Engineering, Ritsumeikan University</strong>.
+            </div>
+          </div>
+
+          <div class="timeline__item">
+            <div class="timeline__date">2021</div>
+            <div class="timeline__detail">
+              Joined the <strong>Cybersecurity Laboratory</strong> at the College of Information Science and Engineering, Ritsumeikan University.
+            </div>
+          </div>
+
+          <div class="timeline__item">
+            <div class="timeline__date">2019</div>
+            <div class="timeline__detail">
+              Entered the <strong>College of Information Science and Engineering, Ritsumeikan University</strong>.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© {new Date().getFullYear()} Soma Sugahara</p>
+  </footer>
+</BaseLayout>
