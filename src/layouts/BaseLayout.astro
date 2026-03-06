@@ -7,6 +7,10 @@ const { title } = Astro.props;
     <meta charset="utf-8" />
     <title>{title ?? 'Soma Sugahara'}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Content Security Policy (basic static site configuration) -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; frame-ancestors 'none'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self';">
 
     <!-- Styles -->
     <link rel="stylesheet" href="/styles.css" />
