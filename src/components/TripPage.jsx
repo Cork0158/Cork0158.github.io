@@ -243,7 +243,7 @@ const TripPage = () => {
         <div className="relative h-full flex flex-col items-center justify-center text-center px-6">
           <div className="flex items-center gap-2 mb-4">
             <div className="h-[1px] w-6 bg-amber-400"></div>
-            <span className="text-amber-400 text-[10px] font-black tracking-[0.3em] uppercase">Special Birthday Trip</span>
+            <span className="text-amber-400 text-[10px] font-black tracking-[0.3em] uppercase">Birthday Trip in 2026</span>
             <div className="h-[1px] w-6 bg-amber-400"></div>
           </div>
           <h1 className="text-4xl font-black text-white mb-2 tracking-tighter">山口・絶景と美食の旅</h1>
