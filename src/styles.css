@@ -1,0 +1,162 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0b0f19;
+  --surface: rgba(255, 255, 255, 0.05);
+  --text: #f4f6ff;
+  --muted: rgba(244, 246, 255, 0.75);
+  --accent: #7c3aed;
+  --radius: 14px;
+  --max-width: 960px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Sans JP", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top, rgba(124, 58, 237, 0.16), transparent 60%),
+    linear-gradient(180deg, rgba(11, 15, 25, 1), rgba(11, 15, 25, 1));
+  color: var(--text);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(11, 15, 25, 0.85);
+  backdrop-filter: blur(12px);
+  padding: 1rem 1.25rem;
+}
+
+nav {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .brand {
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.25rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+nav a {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 4rem 1.25rem;
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+.section + .section {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.hero {
+  display: grid;
+  gap: 2.25rem;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  margin: 0;
+}
+
+.hero p {
+  max-width: 44rem;
+  color: var(--muted);
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.grid--2 {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.card {
+  padding: 1.75rem;
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.card h3 {
+  margin: 0 0 0.75rem;
+}
+
+.timeline {
+  display: grid;
+  gap: 1rem;
+  padding-left: 0.5rem;
+  border-left: 2px solid rgba(244, 246, 255, 0.2);
+}
+
+.timeline__item {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.timeline__date {
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.timeline__detail {
+  color: rgba(244, 246, 255, 0.9);
+}
+
+.footer {
+  padding: 3rem 1.25rem;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  color: rgba(244, 246, 255, 0.75);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 520px) {
+  header {
+    padding: 0.75rem 1rem;
+  }
+
+  main {
+    padding: 3rem 1rem;
+  }
+}
